@@ -1,0 +1,19 @@
+@charset "HTF-8";
+/*
+em HTML é id = em CSS é #
+em HTML é class = em CSS é .(ponto)
+*/
+body {
+    background-color: aqua;
+}
+h1 {
+    color: blue;
+}
+#principal{
+    color: brown;
+    text-align: center;
+    background-color: bisque;
+}
+h2 {
+    color: blueviolet;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinámica</h1>
+    <p>Tente abrir essa site por varios dispositivos diferentes ou simplesmente aumente e diminua a largura do navegador. </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/read-my-lips.mp3.mp3" type="audio/mpeg">
+        <source src="midia/read-my-lips.mp3.ogg" type="audio/ogg">
+        <source src="midia/read-my-lips.mp3.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/read-my-lips.mp3.mp3">Clique aqui para baixar para baixar o arquivo mp3</a></p>
+    
+    </audio>
+    <p>O loop é caso queira que o áudio repita ápos terminar.  </p>
+</body>
+</html>
