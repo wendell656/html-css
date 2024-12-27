@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor0: white;
+    --cor1: #F2CCB6;
+    --cor2: #F2CB05;
+    --cor3: #F2B705;
+    --cor4: #F24535;
+    --cor5: #D90479;
+     }
+     * {
+        margin: 0px ;
+        padding: 0px;
+    }
+     /* shorthand - backgroud
+            color > image > position > repeat > [size] > attachment
+            size ainda não funciona, fazer separado ate que funcione
+            */
+header{
+    background: url('imagens/manu.png') center no-repeat ; 
+    height: 250px;
+    
+    }
+    nav {
+        background-color: var(--cor1);
+        padding: 5px;
+        text-align: center;
+        box-shadow: 1px 1px 21px rgba(0, 0, 0, 0.342);
+    }
+    nav > a {
+        color: var(--cor4);
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 5px 10px;
+        text-decoration: none;
+       
+    }
+    nav > a:hover {
+        background-color: var(--cor4);
+        color: #F2CCB6;
+    }
