@@ -1,42 +1,187 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
 
+/*
+ --cor0: white;
+ --cor1: #F2CCB6;
+ --cor2: #F2CB05;
+ --cor3: #F2B705;
+ --cor4: #F24535;
+ --cor5: #D90479;
+*/
 :root {
     --cor0: white;
-    --cor1: #F2CCB6;
-    --cor2: #F2CB05;
-    --cor3: #F2B705;
-    --cor4: #F24535;
-    --cor5: #D90479;
-     }
+    --cor1: #B3F2F2;
+    --cor2: #F2CB57;
+    --cor3: #F28B0C;
+    --cor4: #D98C4A;
+    --cor5: #A60F0F;
+   
+    
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Bebas Neue", serif;
+    
+
+
+    }
+
      * {
         margin: 0px ;
         padding: 0px;
     }
+
+    html, body {
+        min-height: 100vh;
+        background-color: var(--cor1);
+    }
      /* shorthand - backgroud
             color > image > position > repeat > [size] > attachment
             size ainda não funciona, fazer separado ate que funcione
-            */
+    */
+
 header{
     background: url('imagens/manu.png') center no-repeat ; 
-    height: 250px;
-    
+
+    height: 350px;
+    box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.171);
     }
+
     nav {
-        background-color: var(--cor1);
-        padding: 5px;
-        text-align: center;
-        box-shadow: 1px 1px 21px rgba(0, 0, 0, 0.342);
+        background-color: #f2ccb6;
+        padding: 10px;
+        box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.342);
+        
     }
+
     nav > a {
-        color: var(--cor4);
-        padding: 10px 20px;
-        font-size: 20px;
-        border-radius: 5px 10px;
+        color: var(--cor5);
+        border-radius: 5px;
+        padding: 10px;
         text-decoration: none;
+        transition-duration: .5s;
+        
+    }
+
+    /*nav > a:hover = ao passar o mouse muda de cor*/
+    nav > a:hover{
+        background-color:var(--cor3);
+        color: black;
+    }
+
+    h2 {
+        color:white;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    section {
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+        line-height: 2em;
+        padding: 30px;
        
     }
-    nav > a:hover {
-        background-color: var(--cor4);
-        color: #F2CCB6;
+
+    section.normal {
+        background-color: var(--cor1);
+        color: black;
     }
+
+    section.imagem {
+        
+        color: white;
+        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.386) ;
+        background-attachment: fixed;
+    }
+    /*
+    letter-spacing = espaço entre as letras
+    */
+    
+     section.imagem > h2 {
+        width: 320px;
+        color: var(--cor1);
+        background-color: rgba(47, 43, 50, 0.726);
+        font-family: var(--fonte2);
+        padding: 5px;
+        letter-spacing: 2px;
+        text-shadow: 2px 1px 0px black;
+     }
+
+     section.imagem > p {
+        width: 320px;
+        background-color:  rgba(47, 43, 50, 0.726);
+        padding: 5px;
+        text-shadow: 2px 1px 0px black;
+        
+    }
+
+    section#img01 { 
+        background-color: #f2ccb6;
+        background-image: url(./imagens/pompeia1024.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+       
+       
+    
+    }
+
+    section#img01 > h2 {
+        color: pink;
+    }
+
+    section#img02 {
+        background-color: var(--cor1);
+        background-image: url(./imagens/pompeia1024.2.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+
+    }
+
+    main {
+        background-color: #f2ccb6;
+        padding: 0px 30px 20px 32px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.295);
+    }
+
+    main > h3 {
+        background-image: linear-gradient(to right, var(--cor4), transparent);
+        border-radius: 0px 0px 0px 10px;
+        text-indent: 5px;
+        font-size: 30px;
+        font-family: var(--fonte2);
+        letter-spacing: 2px;
+        }
+
+        main > p {
+         padding-top: 10px;
+            
+        }
+        main > ul {
+            margin: 10px;
+        }
+ 
+  
+ 
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    } 
+    footer a:hover {
+        text-decoration: underline;
+        
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+
+    

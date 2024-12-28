@@ -1,0 +1,62 @@
+TAGS HTML
+
+<!-- Meu comentário em HTML --> comentario em "html".
+/* Meu comentário em css */ comentário "style".
+
+Tags HTML de título
+
+<h1></h1> = Título de maior valor hierárquico
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6> = Título de menor valor hierárquico
+
+Tags HTML de texto;
+
+<p></p> = Principal tag de texto, compõe um parágrafo;
+<span></span> = Funcionalidades parecidas com a tag "p". Para legenda de texto imagens ou video.
+<pre></pre> = Tag utilizada para representar texto pré-formatado.
+<b></b> = Transforma o conteúdo em negrito.
+<i></i> – Transforma o conteúdo em itálico
+<br/> = Quebra de linha (não necessita de fechamneto de tag).
+<hr/> = Linha horizontal (não necessita de fechamneto de tag).
+
+Tags HTML estruturais;
+
+<header></header> = Cabeçalho do site.
+<main></main> = Conteúdo principal do corpo do síte.
+<footer></footer> = Rodapé da página.
+<section></section> = Essas tags definem uma sessão para sua página.
+<article></article> = Essas tags definem um artigo da sua página.
+<aside></aside> = Conteúdo secundário ao assunto príncipal.
+<nav></nav> = conjunto com listas e na criação de menus.
+<div></div> = Para organizar melhor no style.
+<a></a> = Tag usada para indicar um link.
+
+Atributos:
+
+class=”…“ = Atribui uma classe ao elemento.
+id=”…“ = Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);style=”…” – Permite incluir elementos CSS (estilos) dentro da tag.
+lang=”…” = Define o idioma principal do elemento.
+title=”…” = Define o título do elemento.
+alt=”…” = Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO.
+hidden = Oculta o elemento.
+align=”…” = Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify.
+
+Tags HTML de multimídia;
+
+<img src="imagens/imagem1.jpg" alt="imagem 1 da minha página"> = Serve para incluir uma imagem ao seu texto.
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+  Seu navegador não possui suporte para Vídeos.
+</video> = Serve para incluir uma video ao seu texto(A tag <audio> funciona da mesma forma que a tag <video>, portanto, utilizamos a tag <source> dentro dela).
+<iframe> = Para videos externos.
+
+Listas;
+
+<ol></ol> = Para listas ordenadas.
+<ul></ul> = Para listas não ordenadas
+<li></li> = itens da lista.
+
