@@ -17,167 +17,178 @@
     --cor3: #F28B0C;
     --cor4: #D98C4A;
     --cor5: #A60F0F;
-   
-    
+
+
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: "Bebas Neue", serif;
-    
 
 
-    }
 
-     * {
-        margin: 0px ;
-        padding: 0px;
-    }
+}
 
-    html, body {
-        min-height: 100vh;
-        background-color: var(--cor1);
-    }
-     /* shorthand - backgroud
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--cor1);
+}
+
+/* shorthand - backgroud
             color > image > position > repeat > [size] > attachment
             size ainda não funciona, fazer separado ate que funcione
     */
 
-header{
-    background: url('imagens/manu.png') center no-repeat ; 
+header {
+
 
     height: 350px;
     box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.171);
-    }
+}
 
-    nav {
-        background-color: #f2ccb6;
-        padding: 10px;
-        box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.342);
-        
-    }
+nav {
+    background-color: #f2ccb6;
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.342);
 
-    nav > a {
-        color: var(--cor5);
-        border-radius: 5px;
-        padding: 10px;
-        text-decoration: none;
-        transition-duration: .5s;
-        
-    }
+}
 
-    /*nav > a:hover = ao passar o mouse muda de cor*/
-    nav > a:hover{
-        background-color:var(--cor3);
-        color: black;
-    }
+nav>a {
+    color: var(--cor5);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: .5s;
 
-    h2 {
-        color:white;
-    }
+}
 
-    p {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+/*nav > a:hover = ao passar o mouse muda de cor*/
+nav>a:hover {
+    background-color: var(--cor3);
+    color: black;
+}
 
-    section {
-        padding-top: 15vh;
-        padding-bottom: 15vh;
-        line-height: 2em;
-        padding: 30px;
-       
-    }
+h2 {
+    color: white;
+}
 
-    section.normal {
-        background-color: var(--cor1);
-        color: black;
-    }
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    section.imagem {
-        
-        color: white;
-        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.386) ;
-        background-attachment: fixed;
-    }
-    /*
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+    padding: 30px;
+
+}
+
+section.normal {
+    background-color: var(--cor1);
+    color: black;
+}
+
+section.imagem {
+
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.386);
+    background-attachment: fixed;
+}
+
+/*
     letter-spacing = espaço entre as letras
     */
-    
-     section.imagem > h2 {
-        width: 320px;
-        color: var(--cor1);
-        background-color: rgba(47, 43, 50, 0.726);
-        font-family: var(--fonte2);
-        padding: 5px;
-        letter-spacing: 2px;
-        text-shadow: 2px 1px 0px black;
-     }
 
-     section.imagem > p {
-        width: 320px;
-        background-color:  rgba(47, 43, 50, 0.726);
-        padding: 5px;
-        text-shadow: 2px 1px 0px black;
-        
-    }
+section.imagem>h2 {
+    width: 320px;
+    color: var(--cor1);
+    background-color: rgba(47, 43, 50, 0.726);
+    font-family: var(--fonte2);
+    padding: 5px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 0px black;
+}
 
-    section#img01 { 
-        background-color: #f2ccb6;
-        background-image: url(./imagens/pompeia1024.jpg);
-        background-position: top center;
-        background-repeat: no-repeat;
-       
-       
-    
-    }
+section.imagem>p {
+    width: 320px;
+    background-color: rgba(47, 43, 50, 0.726);
+    padding: 5px;
+    text-shadow: 2px 1px 0px black;
 
-    section#img01 > h2 {
-        color: pink;
-    }
+}
 
-    section#img02 {
-        background-color: var(--cor1);
-        background-image: url(./imagens/pompeia1024.2.jpg);
-        background-position: top center;
-        background-repeat: no-repeat;
+section#img01 {
+    background-color: #f2ccb6;
+    background-image: url(./imagens/pompeia1024.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
 
-    }
 
-    main {
-        background-color: #f2ccb6;
-        padding: 0px 30px 20px 32px;
-        border-radius: 0px 0px 20px 20px;
-        box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.295);
-    }
 
-    main > h3 {
-        background-image: linear-gradient(to right, var(--cor4), transparent);
-        border-radius: 0px 0px 0px 10px;
-        text-indent: 5px;
-        font-size: 30px;
-        font-family: var(--fonte2);
-        letter-spacing: 2px;
-        }
+}
 
-        main > p {
-         padding-top: 10px;
-            
-        }
-        main > ul {
-            margin: 10px;
-        }
- 
-  
- 
-    footer a {
-        color: white;
-        text-decoration: none;
-        font-weight: bolder;
-    } 
-    footer a:hover {
-        text-decoration: underline;
-        
-    }
-    footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 10px;
-    }
+section#img01>h2 {
+    color: pink;
+}
+
+section#img02 {
+    background-color: var(--cor1);
+    background-image: url(./imagens/pompeia1024.2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+main {
+    background-color: #f2ccb6;
+    padding: 0px 30px 20px 32px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.295);
+}
+
+main>h3 {
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    border-radius: 0px 0px 0px 10px;
+    text-indent: 5px;
+    font-size: 30px;
+    font-family: var(--fonte2);
+    letter-spacing: 2px;
+}
+
+main>p {
+    padding-top: 10px;
+
+}
+
+main>ul {
+    margin: 10px;
+}
+
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div .logo {
+    height: 100vh;
+    right: 100vw;
+}
